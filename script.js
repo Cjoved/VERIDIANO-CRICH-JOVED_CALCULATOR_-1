@@ -48,7 +48,7 @@ function appendToDisplay(input) {
         autodisplay.value = "";
         autocompute = false;
         
-    } else if (/[0-9+\-/*^()]/.test(input)) {
+    } else if (/[0-9+\-/*^().]/.test(input)) {
         displayElement.value += input;
         Resultupdate();
     }
